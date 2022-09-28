@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FONT AND TYPOGRAPHY ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--=============== FONT AWESOME ===============-->
+    <script src="https://kit.fontawesome.com/cb902f762c.js" crossorigin="anonymous"></script>
+
+    <!--=============== EXTERNAL CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--=============== INTERNAL CSS ===============-->
+    <style>
+        .header {
+            min-height: 80vh;
+            width: 100%;
+            background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background1.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .call-to-action{
+            margin: 100px auto;
+            width: 80%;
+            background-image: linear-gradient(rgba(240,160,122,0.9),rgba(240,160,122,0.9)),url(images/cta.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .call-to-action h1{
+            color: #fff;
+            margin-bottom: 40px; 
+            padding-bottom: 20px;
+        }
+        
+        
+        @media(max-width:700px){
+            .call-to-action{
+                font-size: 24px;
+            }
+        }
+    </style>
+
+
+    <title>SEO Supreme</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+            <a href="index.html"><img class="com-logo" src="images/logo3.png" alt="company logo"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="revealMenu()"></i>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="text-box">
+                <h1>The Only Platform You Need <br />For Performance-Driven SEO</h1>
+                <p>SEO Supreme provides a complete web-based software for managing all <br/> aspects of Search Engine Optimization and delivering excellent results. <br/>With our services, you'll become SEO Supreme</p>
+                <a href="" class="hero-btn">Try For Free</a>
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+    
+        <section class="testimonials title">
+            <h2>We're not the only ones talking</h2>
+            <p>See what our clients have to say about us</p>
+                <div class="row">
+                    <div class="testimonial-col">
+                        <img src="images/user1.jpg">
+                        <div> 
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <p>SEO Supreme is really the best SEO service out there; I've never seen anything like it</p>
+                            <h3>Jack Dan</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="testimonial-col">
+                        <img src="images/user2.jpg">
+                        <div>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <p>SEO Supreme has amazing support. Every question can be answered. And their online chat feature makes asking questions really easy</p>
+                            <h3>Emelia Snow</h3>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
+
+        <!--=============== OUR CLAIM ===============-->
+        <section class="claim title">
+            <h2 >Our Bold Claims</h2>
+            <p>Guaranteed to work</p>
+
+            <div class="row">
+                <div class="claim-col">
+                    <h3>Money Back Guarantee</h3>
+                    <p>we doubt you'd ever need this because our services are guaranteed to work, and ensure 100% satisfaction.</p>
+                </div>
+                <div class="claim-col">
+                    <h3>24/7 Support</h3>
+                    <p>Our trained support staff is ready to answer any question before you even think about it</p>
+                </div>
+                <div class="claim-col">
+                    <h3>Easy to Use</h3>
+                    <p>Our modern, minimalist interface makes it easy to navigate the platform, and saves time for more efficient decision making</p>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== CTA ===============-->
+
+        <section class="call-to-action">
+            
+            <h2 style="color: #000;">Don't Wait<br>Join the 7M+ SEO Supreme family Now!</h2>
+            <a href="index.html" class="hero-btn">TRY FOR FREE</a>
+        
+        </section>
+
+        
+    
+    </main>
+    
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div>
+          <img src="images/logo3.png" alt="company logo" class="com-logo column">
+        </div>
+        <div class="legal column">
+          <p>&copy; 2022. All rights reserved. Micah Nettey</p>
+          
+        </div>
+      </footer>
+
+    <!--=============== JAVASCRIPT FOR TOGGLE MENU ===============-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+    
+        function revealMenu() {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script> 
+</body>
+</html>
